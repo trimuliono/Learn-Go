@@ -68,3 +68,13 @@ Tipe data floating point adalah tipe data yang bisa diisi dengan nilai desimal (
 | uint      | Minimal uint32|
 
 `Minimal int32/uint32` disini maksudnya nilai tergantung arsitektur komputer yg digunakkan apakah 32bit atau 64bit
+
+---
+
+## Tipe data Boolean
+Di go-Lang, boolean dipanggil dengan **bool**
+
+| Nilai Boolean  | Keterangan   |
+|-----------|---------------|
+| true      | Benar         |
+| false      | Salah         |
