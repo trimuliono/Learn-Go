@@ -30,10 +30,41 @@ Ada dua tipe data number;
 ### Tipe data floating point
 Tipe data floating point adalah tipe data yang bisa diisi dengan nilai desimal (nilai yang ada komanya).
 
-| Tipe Data   | Nilai Minimum         | Nilai Maksimum        |
-|-------------|-----------------------|-----------------------|
-| float32     | 1.18×10⁻³⁸           | 3.4×10³⁸             |
-| float64     | 2.23×10⁻³⁰⁸          | 1.80×10³⁰⁸          |
-| complex64   | complex numbers with float32 real and imaginary parts.                   |
-| complex128  | complex numbers with float64 real and imaginary parts.                   |
+<table>
+    <tr>
+        <th>Tipe Data</th>
+        <th>Nilai Minimum</th>
+        <th>Nilai Maksimum</th>
+    </tr>
+    <tr>
+        <td>float32</td>
+        <td>1.18×10⁻³⁸</td>
+        <td>3.4×10³⁸</td>
+    </tr>
+    <tr>
+        <td>float64</td>
+        <td>2.23×10⁻³⁰⁸</td>
+        <td>1.80×10³⁰⁸</td>
+    </tr>
+    <tr>
+        <td>complex64</td>
+        <td colspan="2">complex numbers with float32 real and imaginary parts.</td>
+    </tr>
+    <tr>
+        <td>complex128</td>
+        <td colspan="2">complex numbers with float64 real and imaginary parts.</td>
+    </tr>
+</table>
 
+---
+
+### Alias
+
+| Tipe Data | Alias untuk   |
+|-----------|---------------|
+| byte      | uint8         |
+| rune      | int32         |
+| int       | Minimal int32 |
+| uint      | Minimal uint32|
+
+`Minimal int32/uint32` disini maksudnya nilai tergantung arsitektur komputer yg digunakkan apakah 32bit atau 64bit
