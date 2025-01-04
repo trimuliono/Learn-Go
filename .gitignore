@@ -1,0 +1,44 @@
+# Direktori build artifacts
+/bin/
+/obj/
+*.exe
+*.out
+*.app
+*.dll
+*.dylib
+*.so
+
+# File log dan cache
+*.log
+*.tmp
+*.cache
+
+# Go vendor directory (untuk Go module)
+vendor/
+
+# File dependensi yang di-generate oleh go.mod dan go.sum
+go.sum
+
+# Direktori Go build cache
+**/tmp/
+**/dist/
+
+# File editor atau IDE
+*.vscode/
+*.idea/
+*.sublime-project
+*.sublime-workspace
+
+# File konfigurasi lingkungan lokal
+.env
+.env.local
+.env.*
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test coverage files
+*.cover
+*.cov
