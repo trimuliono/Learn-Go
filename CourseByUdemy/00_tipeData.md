@@ -1,7 +1,9 @@
 # Tipe Data Pada Go-Lang
 
 ## Tipe Data Number
+
 Ada dua tipe data number;
+
 - Integer
 - Floating Point
 
@@ -14,20 +16,21 @@ Ada dua tipe data number;
 | int32     | -2147483648          | 2147483647          |
 | int64     | -9223372036854775808 | 9223372036854775807 |
 
---- 
+---
 
 **Unsigned Integers** (often called "uints") are just like integers (whole numbers) but have the property that they don't have a + or - sign associated with them. Thus they are always non-negative (zero or positive). We use uint's when we know the value we are counting will always be non-negative.
 
-| Tipe Data | Niali Minimum        | Nilai Maximum       |
-| --------- | -------------------- | ------------------- |
-| uint8      | 0                     | 255                 |
-| uint16     | 0                     | 65535               |
-| uint32     | 0                     | 4294967295          |
-| uint64     | 0                     | 18446744073709551615 |
+| Tipe Data | Niali Minimum | Nilai Maximum        |
+| --------- | ------------- | -------------------- |
+| uint8     | 0             | 255                  |
+| uint16    | 0             | 65535                |
+| uint32    | 0             | 4294967295           |
+| uint64    | 0             | 18446744073709551615 |
 
 ---
 
 ### Tipe data floating point
+
 Tipe data floating point adalah tipe data yang bisa diisi dengan nilai desimal (nilai yang ada komanya).
 
 <table>
@@ -60,21 +63,37 @@ Tipe data floating point adalah tipe data yang bisa diisi dengan nilai desimal (
 
 ### Alias
 
-| Tipe Data | Alias untuk   |
-|-----------|---------------|
-| byte      | uint8         |
-| rune      | int32         |
-| int       | Minimal int32 |
-| uint      | Minimal uint32|
+| Tipe Data | Alias untuk    |
+| --------- | -------------- |
+| byte      | uint8          |
+| rune      | int32          |
+| int       | Minimal int32  |
+| uint      | Minimal uint32 |
 
 `Minimal int32/uint32` disini maksudnya nilai tergantung arsitektur komputer yg digunakkan apakah 32bit atau 64bit
 
 ---
 
 ## Tipe data Boolean
+
 Di go-Lang, boolean dipanggil dengan **bool**
 
-| Nilai Boolean  | Keterangan   |
-|-----------|---------------|
-| true      | Benar         |
-| false      | Salah         |
+| Nilai Boolean | Keterangan |
+| ------------- | ---------- |
+| true          | Benar      |
+| false         | Salah      |
+
+---
+
+## Tipe data String
+
+Di go-Lang, boolean dipanggil dengan **string**
+
+Nilai data String di Go-Lang selalu dibungkus dalam `petik dua` **" "**
+
+### Function untuk String
+
+| Function         | Keterangan                                                             |
+| ---------------- | ---------------------------------------------------------------------- |
+| len("string")    | Menghitung jumlah karakter di String                                   |
+| "string"[number] | Mengambil karakter pada posisi yang ditentukan dalam format kode ASCII |
