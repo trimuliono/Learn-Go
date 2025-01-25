@@ -29,9 +29,10 @@ func main() {
 	fmt.Println(daySlice1) // [Jum'at baru Sabtu baru]
 	fmt.Println(days) // [Ahad Senin Selasa Rabu Kamis Jum'at baru Sabtu baru]
 	
+	// NB: append membuat slice baru yang terlepaskan dari array reference jika CAPACITY AWAL tidak cukup
 	daySlice2 := append(daySlice1, "Hari libur") // Menambahkan elemen baru ke slice && append membuat slice baru yang terlepaskan dari array reference
 	fmt.Println(daySlice2) // [Jum'at baru Sabtu baru Hari libur]
-	fmt.Println(daySlice1) // [Jum'at baru Sabtu baru] (tidak berubah karena slice baru)
+	fmt.Println("daySlice1:", daySlice1) // [Jum'at baru Sabtu baru] (tidak berubah karena slice baru)
 	fmt.Println(days) // [Ahad Senin Selasa Rabu Kamis Jum'at baru Sabtu baru] (tidak berubah karena slice baru)
 
 	daySlice2[0] = "Jumat lama" // Mengubah nilai array reference
@@ -58,7 +59,7 @@ func main() {
 
 	newslice2[0] = "Tri Baru"
 	fmt.Println(newslice2) // [Tri Baru Muliono Ganteng]
-	fmt.Println(newslice) // [Tri Muliono]
+	fmt.Println("newslice:", newslice) // [Tri Baru Muliono]
 
 	fromslice := days[:] // membuat slice baru dengan isi, panjang dan kapasitas sama dengan array days
 	toslice := make([]string, len(fromslice), cap(fromslice)) // Membuat slice baru dengan panjang dan kapasitas sama dengan slice fromslice
