@@ -8,7 +8,7 @@ func sayHelloWithFilter(name string, filter func(string) string) {
 	fmt.Println("Hello ", nameFiltered)
 }
 
-// func as type
+// func alias for type declaration
 type Filter func(string) string
 
 func sayHiWithFilter(name string, filter Filter) {
