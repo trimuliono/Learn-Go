@@ -12,7 +12,8 @@ type Customer struct {
 	Age int
 }
 
-// memanggil struct di dalam function
+// struct method
+// struct method adalah function yang menempel pada struct
 func (customer Customer) sayHello(name string) {
 	fmt.Println("Hello", name, "My name is", customer.Name)
 }
