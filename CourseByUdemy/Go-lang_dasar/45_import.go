@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/helper"
 	"fmt"
+
+	"github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/Go-lang_dasar/helper"
 )
- 
+
 func main() {
 	result := helper.SayHello("Tri")
 	fmt.Println(result)

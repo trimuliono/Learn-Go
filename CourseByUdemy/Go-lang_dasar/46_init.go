@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/helper"
-	"github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/database"
+
+	"github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/Go-lang_dasar/database"
+	"github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/Go-lang_dasar/helper"
 
 	// Blank Identifier
 	// Blank Identifier digunakan untuk mengakses package yang tidak digunakan
-	_ "github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/internal" // Blank Identifier ditandai dengan underscore ( _ )
+	_ "github.com/trimuliono/Learn-Go/tree/main/CourseByUdemy/Go-lang_dasar/internal" // Blank Identifier ditandai dengan underscore ( _ )
 )
 
 func main() {
